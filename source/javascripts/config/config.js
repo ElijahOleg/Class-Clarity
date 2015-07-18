@@ -1,9 +1,3 @@
-var app = angular.module('clarityApp', ['ui.router']);
-
-app.run(function($rootScope) {
-  console.log('clarity app');
-});
-
 app
 	.config(function($stateProvider, $urlRouterProvider, $locationProvider) {
 
@@ -35,19 +29,3 @@ app
 	.constant('urls', {
 		'apiUrl': ''
 	});
-
-app.controller('loginCtrl', function($scope, $rootScope, $http, urls) {
-  $scope.working = "Hello World";
-});
-
-app.controller('mainCtrl', function($scope, $rootScope, $http, urls) {
-  $scope.working = "Hello World";
-});
-
-app.controller('profileCtrl', function($scope, $rootScope, $http, urls) {
-  $scope.working = "Hello World";
-});
-
-app.controller('signupCtrl', function($scope, $rootScope, $http, urls) {
-  $scope.working = "Hello World";
-});
