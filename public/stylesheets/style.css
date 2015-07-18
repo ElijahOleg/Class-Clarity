@@ -1,8 +1,6 @@
-body {
-  padding: 50px;
-  font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
+* {
+  font-weight: 200 !important;
 }
-
-a {
-  color: #00B7FF;
+.splash-container {
+  margin: auto !important;
 }
