@@ -1,0 +1,19 @@
+<div class="row">
+  <ul class="collection">
+    <li class="collection-item avatar" ng-repeat="question in Questions">
+      <img src="http://materializecss.com/images/yuna.jpg" class="circle">
+      <span class="title">{{question.author}}</span>
+      <p>
+        {{question.body}}
+      </p>
+      <div class="vote" style="float:right;">
+      </div>
+         {{question.upvotes}}<a class="btn-floating btn-small secondary-content waves-effect waves-yellow btn blue tooltipped" disabled="{{isDisabled}}" data-position="top" data-delay="50" data-tooltip="Up Vote!"><i class="material-icons" style="color: yellow; border">add</i></a>
+    </li>
+  </ul>
+</div>
+<script>
+$(document).ready(function(){
+ $('.tooltipped').tooltip({delay: 50});
+});
+</script>
